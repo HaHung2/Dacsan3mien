@@ -39,18 +39,7 @@
                             </div>
                             <!--Single Footer End-->
                             <!--Single Footer Start-->
-                            <div class="col-lg-2 col-md-6">
-                                <div class="single-footer mt-30">
-                                    <div class="footer-title">
-                                        <h3>Tổng đài hỗ trợ</h3>
-                                    </div>
-                                    <ul class="footer-info">
-                                        <li><span>Kỹ thuật: 1800.1763</span></li>
-                                        <li><span>Khiếu nại: 1800.1062</span></li>
-                                        <li><span>Bảo hành: 1800.1064</span></li>
-                                    </ul>
-                                </div>
-                            </div>
+                            
                             <!--Single Footer End-->
                             <!--Single Footer Start-->
                             <style>
@@ -59,16 +48,27 @@
                                     font-size: 16px;
                                 }
                             </style>
-                            <div class="col-lg-4 col-md-6">
+                            <div class="col-lg-2 col-md-6">
                                 <div class="single-footer mt-30">
                                     <div class="footer-title">
-                                        <h3>Theo dõi</h3>
+                                        <h3>Hỗ trợ</h3>
                                     </div>
                                     <ul class="socil-icon mb-40">
                                         <li><a href="#" data-toggle="tooltip" title="Facebook" target="_blank"><i class="ion-social-facebook"></i></a></li>
                                         <li><a href="#" data-toggle="tooltip" title="Skype" target="_blank"><i class="ion-social-skype"></i></a></li>
                                         <li><a href="#" data-toggle="tooltip" title="Youtube" target="_blank"><i class="ion-social-youtube"></i></a></li>
                                         <li><a href="#" data-toggle="tooltip" title="Pinterest" target="_blank"><i class="ion-social-pinterest"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="single-footer mt-30">
+                                    <div class="footer-title">
+                                        <h3>Bản đồ</h3>
+                                    </div>
+                                    <ul class="footer-info">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.301142686731!2d105.78657997471312!3d20.980562389433306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ade83ba9e115%3A0x6f4fdb5e1e9e39ed!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBLaeG6v24gdHLDumMgSMOgIE7hu5lp!5e0!3m2!1svi!2s!4v1733052532673!5m2!1svi!2s" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                     </ul>
                                 </div>
                             </div>

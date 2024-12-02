@@ -13,40 +13,34 @@
                 <div class="col-lg-6 col-md-6">
                     <!--Product Tab Content Start-->
                     <div class="single-product-tab-content tab-content">
-                        <div id="w1" class="tab-pane fade in active">
-                            <div class="">
-                                <img src="{{ $product->images[0]->image_url }}" alt>
-                            </div>
-                        </div>
                         @if(count($product->images) > 0)
-                            @for($i = 2; $i <= count($product->images); $i++)
-                                <div id="{{'w'.$i}}" class="tab-pane fade">
-                                    <div class="">
-                                        <img src="{{ $product->images[$i-1]->image_url }}" alt>
-                                    </div>
+                            @foreach($product->images as $index => $image)
+                                <div id="w{{ $index + 1 }}" class="tab-pane fade {{ $index === 0 ? 'in active' : '' }}">
+                                    <img src="{{ $image->image_url }}" alt>
                                 </div>
-                            @endfor
+                            @endforeach
                         @endif
                     </div>
                     <!--Product Tab Content End-->
+
                     <!--Single Product Tab Menu Start-->
                     <div class="single-product-tab">
                         <div class="nav single-product-tab-menu owl-carousel">
-                            @if(count($product->images))
-                                @php
-                                    $i = 0;
-                                @endphp
-                                @foreach($product->images as $image)
-                                    @php
-                                        $i++;
-                                    @endphp
-                                    <a data-toggle="tab" href="{{'#w'.$i}}"><img src="{{ $image->image_url }}" alt></a>
+                            @if(count($product->images) > 0)
+                                @foreach($product->images as $index => $image)
+                                    <a data-toggle="tab" href="#w{{ $index + 1 }}">
+                                        <div class="image-container">
+                                            <img src="{{ $image->image_url }}" alt>
+                                        </div>
+                                    </a>
                                 @endforeach
                             @endif
                         </div>
                     </div>
-                    <!--Single Product Tab Menu Start-->
+                    <!--Single Product Tab Menu End-->
                 </div>
+
+
                 <!--Single Product Image End-->
                 <!--Single Product Content Start-->
                 <div class="col-lg-6 col-md-6">
@@ -194,11 +188,11 @@
             <div class="row">
                 <div class="related-products owl-carousel">
                     @foreach($products as $pro)
-                        <div class="col-lg-12">
-                            <div class="single-product">
-                                <div class="product-img">
+                        <div class="col-lg-12 border">
+                            <div class="single-product ">
+                                <div class="product-img img-product-size">
                                     <a href="{{ route('frontend.product.show', $pro->slug) }}">
-                                        <img class="first-img" src="{{ $pro->images[0]->image_url }}" alt>
+                                        <img class="first-img" src="{{ $pro->images[0]->image_url }}" alt max-width: 90%; max-height: 100%; object-fit: cover; margin: 18px 18px 0px 10px;>
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -283,4 +277,29 @@
             width: 100%;
         }
     </style>
+    <script>
+        $(document).ready(function () {
+
+            $(".single-product-tab-menu").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                responsive: {
+                    0: { items: 3 },
+                    600: { items: 4 },
+                    1000: { items: 5 }
+                }
+            });
+
+            $(".single-product-tab-menu a").on("click", function (e) {
+                e.preventDefault();
+                var tabId = $(this).attr("href");
+                $(".tab-pane").removeClass("in active");
+                $(tabId).addClass("in active");
+            });
+        });
+    </script>
 @endsection

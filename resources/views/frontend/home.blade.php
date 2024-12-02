@@ -17,7 +17,7 @@
                     <div class="slider-wrapper theme-default">
                         <!--Slider Background Image Start-->
                         <div id="slider" class="nivoSlider">
-                            <img src="frontend/images/bg-slide.png" alt title="#htmlcaption" class="img-fluid">
+                            <img src="frontend/images/banner4.png" alt title="#htmlcaption" class="img-fluid">
 {{--                            <img src="frontend/images/2_1.jpg" alt title="#htmlcaption2" class="img-fluid">--}}
                         </div>
                         <!--Slider Background Image End-->
@@ -153,24 +153,23 @@
                                         @foreach($phones as $product)
                                             @if(count($product->images)>0)
                                                 <div class="col-lg-12 item-col">
-                                                    <div class="single-product" style="height: 100%;">
-                                                        <div class="product-img" style="height: 160px;">
-                                                            <a href="{{ route('frontend.product.show', $product->slug) }}"
-                                                               style="height: 100%;">
-                                                                <img class="first-img img-fluid"
+                                                    <div class="single-product border" style="height: 100%;">
+                                                        <div class="product-img img-product-size border" >
+                                                            <a href="{{ route('frontend.product.show', $product->slug) }}">
+                                                                 <img class="first-img img-fluid"
                                                                      src="{{ $product->images[0]->image_url }}"
                                                                      alt="anh"
-                                                                     style="height: 100%; width: 80%; margin-left: 10%;">
+                                                                     style="max-width: 100%; max-height: 100%; object-fit: cover; ">
                                                             </a>
+                                                           
                                                         </div>
-                                                        <div class="product-content">
-                                                            <h2 style="height: 65%; width: 90%; margin: 0 auto;">
+                                                        <div class="product-content product-height">
+                                                            <h2 style="height:40px; width: 90%; margin: 0 auto;">
                                                                 <a href="{{ route('frontend.product.show', $product->slug) }}">{{ $product->name }}</a>
                                                             </h2>
                                                             <div class="product-price" style="height: 35%;">
-                                                                <span class="new-price">{{ number_format($product->sale_price, 0, '.', '.') }} <b>₫</b></span>
-                                                                <a class="button add-btn text-white addToCart"
-                                                                   data-toggle="tooltip"
+                                                                <p class="new-price">{{ number_format($product->sale_price, 0, '.', '.') }} <b>₫</b></p>
+                                                                <a class="button text-white addToCart"
                                                                    onclick="addToCart({{ $product->id }})"><i
                                                                         class="fas fa-cart-plus"></i> Thêm</a>
                                                             </div>
@@ -218,24 +217,24 @@
                                         @foreach($laptops as $product)
                                             @if(count($product->images)>0)
                                                 <div class="col-lg-12 item-col">
-                                                    <div class="single-product" style="height: 100%;">
-                                                        <div class="product-img" style="height: 160px;">
-                                                            <a href="{{ route('frontend.product.show', $product->slug) }}"
-                                                               style="height: 100%;">
-                                                                <img class="first-img img-fluid"
+                                                    <div class="single-product border" style="height: 100%;">
+                                                        <div class="product-img img-product-size border" >
+                                                            <a href="{{ route('frontend.product.show', $product->slug) }}"> 
+                                                                 <img class="first-img img-fluid"
                                                                      src="{{ $product->images[0]->image_url }}"
                                                                      alt="anh"
-                                                                     style="height: 100%; width: 80%; margin-left: 10%;">
+                                                                     style="max-width: 100%; max-height: 100%; object-fit: cover;">
                                                             </a>
+                                                           
                                                         </div>
-                                                        <div class="product-content">
-                                                            <h2 style="height: 65%; width: 90%; margin: 0 auto;">
+                                                        <div class="product-content product-height">
+                                                            <h2 style="height:40px; width: 90%; margin: 0 auto;">
                                                                 <a href="{{ route('frontend.product.show', $product->slug) }}">{{ $product->name }}</a>
                                                             </h2>
                                                             <div class="product-price" style="height: 35%;">
-                                                                <span class="new-price">{{ number_format($product->sale_price, 0, '.', '.') }} <b>₫</b></span>
-                                                                <a class="button add-btn text-white addToCart"
-                                                                   data-toggle="tooltip"
+                                                                <p class="new-price">{{ number_format($product->sale_price, 0, '.', '.') }} <b>₫</b></p>
+                                                                <a class="button  text-white addToCart"
+                                    
                                                                    onclick="addToCart({{ $product->id }})"><i
                                                                         class="fas fa-cart-plus"></i> Thêm</a>
                                                             </div>
@@ -282,25 +281,25 @@
                                     <div class="all-product mb-85  owl-carousel">
                                         @foreach($tablets as $product)
                                             @if(count($product->images)>0)
-                                                <div class="col-lg-12 item-col">
-                                                    <div class="single-product" style="height: 100%;">
-                                                        <div class="product-img" style="height: 160px;">
-                                                            <a href="{{ route('frontend.product.show', $product->slug) }}"
-                                                               style="height: 100%;">
-                                                                <img class="first-img img-fluid"
+                                                <div class="col-lg-12 item-col ">
+                                                    <div class="single-product border" style="height: 100%;" >
+                                                        <div class="product-img img-product-size border">
+                                                            <a href="{{ route('frontend.product.show', $product->slug) }}">   
+                                                                   <img class="first-img img-fluid"
                                                                      src="{{ $product->images[0]->image_url }}"
                                                                      alt="anh"
-                                                                     style="height: 100%; width: 80%; margin-left: 10%;">
+                                                                     style="max-width: 100%; max-height: 100%; object-fit: cover;">
                                                             </a>
+                                                            
                                                         </div>
-                                                        <div class="product-content">
-                                                            <h2 style="height: 65%; width: 90%; margin: 0 auto;">
+                                                        <div class="product-content product-height">
+                                                            <h2 style="height:40px; width: 90%; margin: 0 auto;">
                                                                 <a href="{{ route('frontend.product.show', $product->slug) }}">{{ $product->name }}</a>
                                                             </h2>
                                                             <div class="product-price" style="height: 35%;">
-                                                                <span class="new-price">{{ number_format($product->sale_price, 0, '.', '.') }} <b>₫</b></span>
-                                                                <a class="button add-btn text-white addToCart"
-                                                                   data-toggle="tooltip"
+                                                                <p class="new-price">{{ number_format($product->sale_price, 0, '.', '.') }} <b>₫</b></p>
+                                                                <a class="button  text-white addToCart"
+                                        
                                                                    onclick="addToCart({{ $product->id }})"><i
                                                                         class="fas fa-cart-plus"></i> Thêm</a>
                                                             </div>
@@ -348,24 +347,23 @@
                                         @foreach($clocks as $product)
                                             @if(count($product->images)>0)
                                                 <div class="col-lg-12 item-col">
-                                                    <div class="single-product" style="height: 100%;">
-                                                        <div class="product-img" style="height: 160px;">
-                                                            <a href="{{ route('frontend.product.show', $product->slug) }}"
-                                                               style="height: 100%;">
+                                                    <div class="single-product border" style="height: 100%;">
+                                                        <div class="product-img img-product-size border" >
+                                                            <a href="{{ route('frontend.product.show', $product->slug) }}">
                                                                 <img class="first-img img-fluid"
                                                                      src="{{ $product->images[0]->image_url }}"
                                                                      alt="anh"
-                                                                     style="height: 100%; width: 80%; margin-left: 10%;">
+                                                                     style="max-width: 100%; max-height: 100%; object-fit: cover;">
                                                             </a>
+                                                            
                                                         </div>
-                                                        <div class="product-content">
-                                                            <h2 style="height: 65%; width: 90%; margin: 0 auto;">
+                                                        <div class="product-content product-height">
+                                                            <h2 style="height:40px; width: 90%; margin: 0 auto;">
                                                                 <a href="{{ route('frontend.product.show', $product->id) }}">{{ $product->name }}</a>
                                                             </h2>
                                                             <div class="product-price" style="height: 35%;">
-                                                                <span class="new-price">{{ number_format($product->sale_price, 0, '.', '.') }} <b>₫</b></span>
-                                                                <a class="button add-btn text-white addToCart"
-                                                                   data-toggle="tooltip"
+                                                                <p class="new-price">{{ number_format($product->sale_price, 0, '.', '.') }} <b>₫</b></p>
+                                                                <a class="button  text-white addToCart"
                                                                    onclick="addToCart({{ $product->id }})"><i
                                                                         class="fas fa-cart-plus"></i> Thêm</a>
                                                             </div>

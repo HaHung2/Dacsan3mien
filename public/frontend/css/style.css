@@ -167,7 +167,7 @@ Version: 1.0;
 /*  1.2 Header Middle CSS
 /*----------------------------------------*/
 .logo {
-	padding: 44px 0;
+	padding: 18px 0 44px;
 }
 .search-box-area {
 	border-radius: 30px;
@@ -989,11 +989,7 @@ Version: 1.0;
     font-weight: 500;
     color: #EB3E32;
 }
-.single-product:hover a.button.add-btn,.single-product3:hover a.button.add-btn{
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    visibility: visible;
-}
+
 /*----------------------------------------------*/
 /*   5.1.2 Smartphone & Tablet Product Area CSS
 /*-----------------------------------------------*/
@@ -1182,6 +1178,9 @@ Version: 1.0;
 }
 .footer-logo {
 	margin-bottom: 30px;
+}
+.contact > p {
+	padding:0 60px 0;
 }
 .contact > p > label {
 	margin-right: 10px;
@@ -4814,6 +4813,52 @@ p.form-messege.success {
 
 .sc-jaXxmE {
     display: none !important;
+}
+
+
+.single-product-tab-content img {
+    width: 100%; 
+    min-height: 300px;
+	max-height: 500px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.image-container {
+    width: 80px; 
+    height: 80px;
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+
+.single-product-tab-menu a {
+    margin: 5px;
+}
+
+
+.img-product-size {
+	height: 170px !important; 
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 

@@ -88,7 +88,7 @@
                                 {{ csrf_field() }}
                                 <div class="select-area">
                                     <select data-placeholder="Choose a Country..." class="select" tabindex="1" disabled style="cursor: unset;">
-                                        <option value>Javenist</option>
+                                        <option value>Tất cả</option>
                                     </select>
                                 </div>
                                 <div class="search-box">

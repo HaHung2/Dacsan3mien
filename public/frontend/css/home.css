@@ -1,6 +1,13 @@
 .product-content{
     height: 80px;
 }
+
+.product-height{
+    height: 150px;
+}
+.product-img{
+    height: 110px;
+}
 a.button.add-btn, a.button.add-btn.big {
     top: auto;
     bottom: 0;
