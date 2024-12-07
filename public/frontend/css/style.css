@@ -615,7 +615,7 @@ Version: 1.0;
 	font-weight: 700;
 	color: #363f4d;
 	margin-bottom: 4px;
-	font-family: Rubik;
+	font-family: "Roboto", serif;
 }
 .slider-text > h5 {
 	color: #EB3E32;
@@ -623,7 +623,7 @@ Version: 1.0;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 22px;
-	font-family: Rubik;
+	font-family: "Roboto", serif;
 	font-weight: 400;
 }
 .slider-text > h4 {
@@ -631,13 +631,13 @@ Version: 1.0;
 	color: #333C49;
 	margin: 40px 0;
 	font-weight: 400;
-    font-family: Rubik;
+    font-family: "Roboto", serif;
 }
 .slider-text > h4 > span{
     font-size: 30px;
     line-height: 30px;
     color: #EB3E32;
-    font-family: Rubik;
+    font-family: "Roboto", serif;
     font-weight: 500;
 }
 .nivo-controlNav {
@@ -1124,7 +1124,7 @@ Version: 1.0;
     border-right: 0;
 }
 .categories-content > h3 {
-	font-family: Rubik;
+	font-family: "Roboto", serif;
 	font-size: 16px;
 	color: #363f4d;
 	font-weight: 500;
@@ -1196,7 +1196,7 @@ Version: 1.0;
 	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: 700;
-	font-family: Rubik;
+	font-family: "Roboto", serif;
 }
 .footer-info > li {
 	display: block;
@@ -2523,7 +2523,7 @@ li.right-menu .cat-mega-menu > li {
 .heading-banner-title > h1 {
 	font-size: 30px;
 	font-weight: 700;
-	font-family: Rubik;
+	font-family: "Roboto", serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	margin: 0;

@@ -17,7 +17,7 @@
                     <div class="slider-wrapper theme-default">
                         <!--Slider Background Image Start-->
                         <div id="slider" class="nivoSlider">
-                            <img src="frontend/images/banner4.png" alt title="#htmlcaption" class="img-fluid">
+                            <img src="frontend/images/Yellow_Simple _Food_Menu_Banner.png" alt title="#htmlcaption" class="img-fluid">
 {{--                            <img src="frontend/images/2_1.jpg" alt title="#htmlcaption2" class="img-fluid">--}}
                         </div>
                         <!--Slider Background Image End-->
