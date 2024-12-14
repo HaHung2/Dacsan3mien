@@ -48,10 +48,10 @@
                         <div class="col-sm-6 invoice-col">
                             Người mua
                             <address>
-                                <strong>Javenist Shop</strong><br>
-                                Địa chỉ: Đông Anh - Hà Nội<br>
-                                Phone: 0381452749<br>
-                                Email: dttoan432@gmail.com
+                                <strong>ĐS3M Shop</strong><br>
+                                Địa chỉ: Hà Đông - Hà Nội<br>
+                                Phone: 0947227298<br>
+                                Email: hahung0202@gmail.com
                             </address>
                         </div>
                         <!-- /.col -->

@@ -84,7 +84,7 @@
                             <!--Discription Tab Menu End-->
                             <!--Discription Tab Content Start-->
                             <div class="discription-tab-content tab-content">
-                                <div id="description" class="tab-pane fade show active">
+                                <div id="description" class="fade show active">
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="description-content position-relative">
@@ -302,4 +302,35 @@
             });
         });
     </script>
+    <script>
+        $(document).ready(function () {
+              var $carousel = $(".single-product-tab-menu");
+              var imageCount = {{ count($product->images) }};
+              
+              $carousel.owlCarousel({
+                  loop: imageCount > 3,
+                  margin: 10,
+                  nav: true,
+                  dots: false,
+                  autoplay: true,
+                  autoplayTimeout: 3000,
+                  responsive: {
+                      0: { items: 3 },
+                      600: { items: 4 },
+                      1000: { items: 5 }
+                  }
+              });
+  
+              setTimeout(function() {
+                  $carousel.data('owl.carousel').options.loop = (imageCount > 3);
+                  $carousel.trigger('refresh.owl.carousel');
+              }, 100);
+  
+              $(".single-product-tab-menu a").on("click", function (e) {
+                  e.preventDefault();
+                  $(".tab-pane").removeClass("in active");
+                  $($(this).attr("href")).addClass("in active");
+              });
+          });
+      </script>
 @endsection
