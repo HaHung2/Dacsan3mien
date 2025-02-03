@@ -1,4 +1,8 @@
 /* cyrillic-ext */
+button#widgetIcon .df-chat-icon.default .show {
+  display: none !important;
+}
+
 @font-face {
   font-family: 'Raleway';
   font-style: normal;

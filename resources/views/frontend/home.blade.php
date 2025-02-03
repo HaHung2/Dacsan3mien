@@ -6,6 +6,13 @@
 
 @section('script_top')
     <link rel="stylesheet" href="/frontend/css/home.css">
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="electronicstore_demo"
+  agent-id="65320144-c8c1-4f72-920d-7b68dbe82d41"
+  language-code="vi"
+></df-messenger>
 @endsection
 
 @section('content')
@@ -482,7 +489,7 @@
     <section class="all-slide-product product_res">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-4">
+                {{-- -- <div class="col-lg-4 col-md-4">
                     <div class="row">
                         <div class="col-lg-12">
                             <!--Section Title2 Start-->
@@ -527,7 +534,7 @@
                         </div>
                     </div>
                     <!--Special Single Product Start-->
-                </div>
+                </div>  --}}
                 <!--Single Slide Product Start-->
                 <!--Single Slide Product Start-->
                 <div class="col-lg-4 col-md-4">
